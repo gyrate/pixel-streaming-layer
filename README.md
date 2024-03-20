@@ -1,18 +1,11 @@
-##介绍
+## 介绍
 
 该组件用于便捷地在Web端集成UE像素流送服务
-
-[NPM私有库地址](http://192.168.1.106:4873/-/web/detail/@zkzc/pixel-streaming-layer)
-
-##示例页面
-以下页面引用了pixel-stream-layer,并指定streamUrl地址
-
-https://lbs.iot-cas.com/lbs/static/demo/pixel-streaming-layer/index.html?streamurl=https://192.168.1.254
 
 ## 快速上手
 ### 安装依赖包
 ```shell
-npm i @zkzc/pixel-streaming-layer --registry http://192.168.1.106:4873
+npm i pixel-streaming-layer --registry http://192.168.1.106:4873
 ```
 ### 全局注册
 ```vue
@@ -20,11 +13,11 @@ import { createApp } from 'vue'
 const app = createApp(App)
 
 // 注册组件
-import PixelStreamLayer from '@zkzc/pixel-streaming-layer'
+import PixelStreamLayer from 'pixel-streaming-layer'
 app.use(PixelStreamLayer)
 
 // 引入样式
-import '@zkzc/pixel-streaming-layer/lib/pixel-streaming-layer.css'
+import 'pixel-streaming-layer/lib/pixel-streaming-layer.css'
 ```
 ### 程序调用
 ```vue
@@ -34,7 +27,7 @@ import '@zkzc/pixel-streaming-layer/lib/pixel-streaming-layer.css'
 
 ## 子工程引用
 ```shell
-git submodule add git@192.168.1.130:easyCode/gl-layers.git
+git submodule add  ${module_URL}
 ```
 
 ## 常用指令
@@ -79,6 +72,5 @@ app.use(PixelStreamLayer)
 [UE5.1 + Vue3像素流 保姆级教程](https://zhuanlan.zhihu.com/p/636721994)
 
 [Vue3 + UE5.2 NPM包](https://zhuanlan.zhihu.com/p/635475997)
-该方案无法修改ws地址,需要工程与信令服务同域
 
 [从0开始开发Vue3组件库](https://juejin.cn/post/7009212518954434573)
