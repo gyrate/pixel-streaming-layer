@@ -33,7 +33,7 @@ git submodule add  ${module_URL}
 ## 常用指令
 ### 本地运行
 ```shell
-npm install
+npm install --legacy-peer-deps
 npm run serve
 ```
 ### 构建工程
