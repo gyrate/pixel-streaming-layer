@@ -5,7 +5,7 @@
 ## 快速上手
 ### 安装依赖包
 ```shell
-npm i pixel-streaming-layer --registry http://192.168.1.106:4873
+npm i pixel-streaming-layer
 ```
 ### 全局注册
 ```vue
@@ -61,6 +61,7 @@ import PixelStreamLayer from '../lib/pixel-streaming-layer.umd.js'
 import '../lib/pixel-streaming-layer.css'
 app.use(PixelStreamLayer)
 ```
+
 方法2：工程内全局引入,方便调试
 ```vue
 import PixelStreamLayer from './components/index'
